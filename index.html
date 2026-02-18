@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Access Portal</title>
+
+  <style>
+  body { margin: 12px; }
+  pre { white-space: pre-wrap; word-wrap: break-word; }
+  img, video { max-width: 100%; height: auto; }
+</style>
 </head>
 
+
+  
 <body bgcolor="#ffffff" text="#000000">
 <font face="Courier New">
 
@@ -21,7 +30,7 @@
 function check() {
   var input = document.getElementById("pw").value;
 
-  if (input === "1999") {
+  if (input === "1994") {
     window.location.href = "home.html";
   } else {
     document.getElementById("msg").innerText = "ACCESS DENIED";
