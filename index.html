@@ -1,43 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>New York Archive</title>
+  <title>Access Portal</title>
 </head>
 
-<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#551a8b">
+<body bgcolor="#ffffff" text="#000000">
+<font face="Courier New">
 
-<font face="Times New Roman">
-
-<h2>NEW YORK ARCHIVE</h2>
-
+<h3>ARCHIVE ACCESS</h3>
 <hr>
 
-<p>
-Status: PARTIAL<br>
-Access Level: RESTRICTED<br>
-Last Updated: 1999-11-04
-</p>
+<p>Enter authorization code:</p>
 
-<hr>
+<input type="password" id="pw">
+<button onclick="check()">Submit</button>
 
-<h3>AVAILABLE RECORDS</h3>
+<p id="msg"></p>
 
-<ul>
-  <li>CASE-019 — Incomplete</li>
-  <li>CASE-020 — Archived</li>
-  <li>CASE-021 — Restricted</li>
-</ul>
+<script>
+function check() {
+  var input = document.getElementById("pw").value;
 
-<hr>
-
-<p>
-<small>
-This archive contains administrative and media records.<br>
-Certain materials are not publicly accessible.
-</small>
-</p>
+  if (input === "1999") {
+    window.location.href = "home.html";
+  } else {
+    document.getElementById("msg").innerText = "ACCESS DENIED";
+  }
+}
+</script>
 
 </font>
-
 </body>
 </html>
