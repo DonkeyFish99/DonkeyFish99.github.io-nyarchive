@@ -21,7 +21,7 @@
 
 <p>Enter authorization code:</p>
 
-<input type="password" id="pw">
+<input type="password" id="pw" onkeydown="if(event.key==='Enter') check();">
 <button onclick="check()">Submit</button>
 
 <p id="msg"></p>
